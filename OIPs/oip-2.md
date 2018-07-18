@@ -18,7 +18,7 @@ Jerome Chen created: 2018-06-14, last updated:2018-06-20
 
 ## Background
 
-Olympus Labs is a protocol for developing tokenized cryptocurrency financial products such as indices, funds, lending products, futures, options, and more. We build the core components of financial products, such as exchange, rebalance, and fee calculation, and financial products can be created by assembling these core components.
+Olympus Protocol is a protocol for developing tokenized cryptocurrency financial products such as indices, funds, lending products, futures, options, and more. We build the core components of financial products, such as exchange, rebalance, and fee calculation, and financial products can be created by assembling these core components.
 
 Olympus Labs aims to power the next generation fintech DApp ecosystem through the Olympus Protocol. We provide APIs/SDKs for developers and existing applications to integrate our protocol and offer tokenized financial products and services to their users, both investors and investment managers. 
 
