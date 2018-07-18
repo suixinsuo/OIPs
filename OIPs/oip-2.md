@@ -28,28 +28,24 @@ A new architecture based on modularized and layered design thinking is needed in
 
 ## Overall design
 
-The new architecture takes on a layered design, with each layer being built around the layer within. There are a total of 4 layers in the Olympus Ecosystem, with each inner layer performing functionalities that support the development of each outer layer.
+The new architecture takes on a layered design, with each layer being built around the layer within. There are a total of 3 layers in the Olympus Ecosystem, with each inner layer performing functionalities that support the development of each outer layer.
 
 
-#### Layer 1: MOT
+#### Layer 1: Core Components
 
-The first layer of the ecosystem is MOT, the native token in the Olympus Ecosystem. MOT is a utility token used for accessing Olympus core components.
+The first layer of the ecosystem is Olympus core components. We have conducted a deep analysis of the financial products that exist in the financial world and have reduced them to their core functionalities. These core functionalities are common across various financial products and thus we have developed highly reusable functionality modules, what we call core components. Each core component performs an essential function, such as allowing the buying/selling of tokens, calculating the management fee, conducting risk control, amongst others. The key benefit of these core components is that they can be easily assembled together to create new types of financial products such as indices, funds, lending products, options, and futures, and enables the creation of novel financial products that do not yet exist.
 
-#### Layer 2: Core Components
+#### Layer 2: Financial Protocols
 
-The second layer of the ecosystem is Olympus core components. We have conducted a deep analysis of the financial products that exist in the financial world and have reduced them to their core functionalities. These core functionalities are common across various financial products and thus we have developed highly reusable functionality modules, what we call core components. Each core component performs an essential function, such as allowing the buying/selling of tokens, calculating the management fee, conducting risk control, amongst others. The key benefit of these core components is that they can be easily assembled together to create new types of financial products such as indices, funds, lending products, options, and futures, and enables the creation of novel financial products that do not yet exist.
-
-#### Layer 3: Financial Protocols
-
-​The third layer of the ecosystem is Financial Protocols. This layer consists of the financial product templates created using the core components, and thus we see how an inner layer supports the development of an outer layer. There are two types of financial product templates that exist in this layer. The first type of financial product templates is the base template for each financial product type, such as the base template for an index. It is the most basic template for that product type and serves as the standard. All templates of that type of financial product must meet the requirements of the base template in order to qualify as a template of that financial product type. 
+​The second layer of the ecosystem is Financial Protocols. This layer consists of the financial product templates created using the core components, and thus we see how an inner layer supports the development of an outer layer. There are two types of financial product templates that exist in this layer. The first type of financial product templates is the base template for each financial product type, such as the base template for an index. It is the most basic template for that product type and serves as the standard. All templates of that type of financial product must meet the requirements of the base template in order to qualify as a template of that financial product type. 
 
 The second type of financial product templates is custom templates. These templates can be created either by taking a base template and adding/modifying core components or by assembling core components from the ground up. Financial product templates can be easily created in this manner as the product creator only needs to focus on the product logic without having to develop the underlying functionalities. For example, if the product creator is creating a fund and need to calculate his/her management fee, he/she can do so by simply integrating the fee calculation component, without having to build that functionality him/herself.
 
-#### Layer 4: Financial Applications
+#### Layer 3: Financial Applications
 
-The fourth layer of the ecosystem is financial applications, or the DApp layer. The DApp layer of financial applications will be powered by the Olympus Protocol. We envision two main categories of DApps in this layer: 1. DApps that serve producers of financial products (investment managers and product creators) and 2. DApps that serve consumers of financial products (consumers and investors). The Olympus Protocol supports fintech applications such as wallets, portfolio tracking applications, market analysis tools, investment manager applications for creating and managing financial products, financial product marketplaces, financial product exchanges, and much more. Through our APIs/SDKs, both existing applications and developers building new applications can integrate Olympus Protocol to provide the next generation of financial product offerings and services to their users.
+The third layer of the ecosystem is financial applications, or the DApp layer. The DApp layer of financial applications will be powered by the Olympus Protocol. We envision two main categories of DApps in this layer: 1. DApps that serve producers of financial products (investment managers and product creators) and 2. DApps that serve consumers of financial products (consumers and investors). The Olympus Protocol supports fintech applications such as wallets, portfolio tracking applications, market analysis tools, investment manager applications for creating and managing financial products, financial product marketplaces, financial product exchanges, and much more. Through our APIs/SDKs, both existing applications and developers building new applications can integrate Olympus Protocol to provide the next generation of financial product offerings and services to their users.
 
-The following diagram shows the 4 layers of the Olympus Ecosystem:
+The following diagram shows the 3 layers of the Olympus Ecosystem:
 
 
 ![Application Layers](../assets/Application-Layers.png)
